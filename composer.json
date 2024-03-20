@@ -1,0 +1,30 @@
+{
+    "name": "jubayed/auto-modules",
+    "description": "",
+    "type": "composer-plugin",
+    "license": "unlicense",
+    "authors": [
+        {
+            "name": "Jubayed Bhuiyan",
+            "email": "support@jubayed.net"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "require": {
+        "ext-json": "*",
+        "composer-plugin-api": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jubayed\\Composer\\": "src/"
+        }
+    },
+    "extra": {
+        "class": "Jubayed\\Composer\\Plugin"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    }
+}
